@@ -5,8 +5,10 @@ const Pizza = ({ name, ingredients, imgUrl, price }) => {
 
       <div>
         <h2 className="text-xl">{name}</h2>
-        <p className="text-gray-600 font-light text-sm">{ingredients}</p>
-        <p className="text-sm mt-6">${price}</p>
+        <p className="text-gray-600 font-light text-sm md:text-base">
+          {ingredients}
+        </p>
+        <p className="text-sm">${price}</p>
       </div>
     </div>
   );
