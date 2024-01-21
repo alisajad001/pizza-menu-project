@@ -6,7 +6,7 @@ const Footer = () => {
   console.log(isOpen);
 
   return (
-    <footer className="text-center py-12 border-t-4 mt-5">
+    <footer className="text-center py-12 border-t-4 border-yellow-500">
       <p className="text-xl">
         {new Date().toLocaleTimeString()} We&apos;re now open come and order.
       </p>
