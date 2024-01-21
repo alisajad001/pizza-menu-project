@@ -6,9 +6,13 @@ const Footer = () => {
   console.log(isOpen);
 
   return (
-    <footer>
-      <p>{getHour} We&apos;re now open come and order.</p>
-      <button>Order Now</button>
+    <footer className="text-center py-12 border-t-4 mt-5">
+      <p className="text-xl">
+        {new Date().toLocaleTimeString()} We&apos;re now open come and order.
+      </p>
+      <button className="bg-yellow-500 hover:bg-yellow-600 transition rounded-md p-3 text-white mt-7">
+        Order Now
+      </button>
     </footer>
   );
 };
