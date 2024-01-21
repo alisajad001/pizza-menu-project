@@ -1,6 +1,6 @@
 const Pizza = ({ name, ingredients, imgUrl, price }) => {
   return (
-    <div className="flex items-center gap-6 w-[350px]">
+    <div className="flex items-center gap-6 w-[300px]">
       <img src={imgUrl} className="w-28 rounded-md" />
 
       <div>
