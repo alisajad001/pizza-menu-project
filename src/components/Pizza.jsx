@@ -2,10 +2,14 @@ import pizzaImg from "../assets/pizzas/margherita.jpg";
 
 const Pizza = () => {
   return (
-    <div>
-      <img src={pizzaImg} />
-      <h2>Pizza Name</h2>
-      <p>Tomato, mozorilla, spinach</p>
+    <div className="flex items-center gap-6">
+      <img src={pizzaImg} className="w-28 rounded-md" />
+
+      <div>
+        <h2 className="text-xl">Margherita</h2>
+        <p className="text-gray-600 font-light">Tomato, mozorilla, spinach</p>
+        <p className="text-sm mt-6">$19.33</p>
+      </div>
     </div>
   );
 };
