@@ -18,6 +18,7 @@ const Menu = () => {
                 ingredients={pizza.ingredients}
                 price={pizza.price}
                 imgUrl={pizza.url}
+                soldOut={pizza.soldOut}
               />
             );
           })}

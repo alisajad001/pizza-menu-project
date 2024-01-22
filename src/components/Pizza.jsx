@@ -1,6 +1,6 @@
-const Pizza = ({ name, ingredients, imgUrl, price }) => {
+const Pizza = ({ name, ingredients, imgUrl, price, soldOut }) => {
   return (
-    <div className="flex items-center gap-6 w-[300px]">
+    <div className="flex items-center gap-6 w-full sm:w-[300px]">
       <img src={imgUrl} className="w-28 rounded-md" />
 
       <div>
@@ -8,7 +8,7 @@ const Pizza = ({ name, ingredients, imgUrl, price }) => {
         <p className="text-gray-600 font-light text-sm md:text-base">
           {ingredients}
         </p>
-        <p className="text-sm">${price}</p>
+        <p className="text-sm">{soldOut ? "sold out" : `$${price}`}</p>
       </div>
     </div>
   );
